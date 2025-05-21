@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Color Display -->
+    <View
+        android:id="@+id/colorDisplay"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#CCCCCC"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Red -->
+
+    <!-- Green -->
+
+    <Switch
+        android:id="@+id/redSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="R"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colorDisplay" />
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:max="1000"
+        app:layout_constraintEnd_toStartOf="@id/redInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/redSwitch"
+        app:layout_constraintTop_toBottomOf="@id/colorDisplay" />
+
+    <!-- Blue -->
+
+    <EditText
+        android:id="@+id/redInput"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colorDisplay" />
+
+    <Switch
+        android:id="@+id/greenSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="G"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/redSeekBar" />
+
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:max="1000"
+        app:layout_constraintEnd_toStartOf="@id/greenInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/greenSwitch"
+        app:layout_constraintTop_toBottomOf="@id/redSeekBar" />
+
+    <EditText
+        android:id="@+id/greenInput"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/redSeekBar" />
+
+    <Switch
+        android:id="@+id/blueSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greenSeekBar" />
+
+    <!-- Reset Button -->
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:max="1000"
+        app:layout_constraintEnd_toStartOf="@id/blueInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/blueSwitch"
+        app:layout_constraintTop_toBottomOf="@id/greenSeekBar" />
+
+    <EditText
+        android:id="@+id/blueInput"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greenSeekBar" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="99dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:text="RESET"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blueSeekBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
