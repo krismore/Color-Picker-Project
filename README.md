@@ -4,7 +4,7 @@ My submission for CPSC 411, Section 04, Color Picker
 
 # My Information
 
-* Name: Kris Moreno
+* Name: Kristine Moreno
 * CWID: 885657890
 * Email: cyn7hia@csu.fullerton.edu
 
